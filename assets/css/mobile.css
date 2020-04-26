@@ -1,0 +1,30 @@
+@media(max-width:900px){
+.history-img{
+    float:none !important;
+    width:100% !important;
+}
+.history-content{
+    float:none !important;
+    max-width:100% !important;
+    height:40vh;
+}
+.features-item{
+    height:30vh;
+    border:2px solid;
+    width:100%;
+    text-align: center;
+    float:none;
+    margin-right:0;
+    margin-bottom:1%;
+}
+
+#About i{
+    color:#fff;
+    margin:10vh 40vw;
+}
+#contact .container{
+    text-align:center;
+    margin-right:20px;
+    margin-left:20px;
+}
+}
