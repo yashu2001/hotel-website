@@ -27,4 +27,24 @@
     margin-right:20px;
     margin-left:20px;
 }
+nav .nav-logo{
+    float:none;
+    text-align:center;
+    display:block;
+    color:#fff;
+    padding:10px;
+    font-weight: bolder;
+}
+nav .nav-menu ul{
+    list-style: none;
+    float:none;
+    text-align:center;
+    margin:0;
+}
+nav .nav-menu ul li{
+    display: block;
+    color:#fff;
+    padding:10px;  
+}
+
 }
