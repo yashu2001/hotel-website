@@ -65,5 +65,7 @@ nav .nav-menu ul li{
     color:#fff;
     padding:10px;  
 }
-
+nav .nav-menu ul li a{
+    text-decoration: none;  
+}
 }
