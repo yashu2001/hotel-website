@@ -62,6 +62,7 @@ nav .nav-menu ul li:hover{
 .container{
     max-width: 900px;
     margin:auto;
+
 }
 .btn{
     display: inline-block;
@@ -180,7 +181,7 @@ nav .nav-menu ul li:hover{
 }
 #Testimonials .testimonials-list{
     height:90vh;
-    width:75vh;
+    width:75vw;
 }
 #Testimonials  .testimonials-list  .testimonials-item{
     z-index:2;

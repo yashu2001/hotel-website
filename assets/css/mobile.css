@@ -1,4 +1,7 @@
 @media(max-width:900px){
+*{
+    box-sizing: border-box;
+}
 .history-img{
     float:none !important;
     width:100% !important;
@@ -7,6 +10,9 @@
     float:none !important;
     max-width:100% !important;
     height:50vh;
+}
+.container{
+    max-width:80vw;
 }
 .features-item{
     height:30vh;
@@ -17,15 +23,27 @@
     margin-right:0;
     margin-bottom:1%;
 }
-
+#About{
+    height:130vh;
+}
 #About i[class="fa fa-user-circle fa-5x"]{
     color:#fff;
-    margin:10vh 40vw;
+    margin:10vh 20vw;
+}
+#About a{
+    margin:5vh 15vw;
+}
+#Testimonials a{
+    margin:0 20vw;
 }
 #contact .container{
     text-align:center;
     margin-right:20px;
     margin-left:20px;
+}
+#Testimonials .testimonials-list{
+    height:120vh;
+    width:75vw;
 }
 nav .nav-logo{
     float:none;
