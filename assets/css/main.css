@@ -3,12 +3,13 @@
     margin:0;
     padding:0;
     line-height: 1em;
+    scroll-behavior: smooth;
 }
 h2{
-    margin-bottom: 4px;
+    margin-bottom: 2rem;
 }
 p{
-    margin:2em;
+    margin:2rem;
 }
 nav{
     background-color: #000;
@@ -18,11 +19,12 @@ nav{
     padding:0;
     position: sticky;
     top:0;
+    z-index:1000;
 }
 nav .nav-logo{
     float:left;
     color:#fff;
-    padding:20px;
+    padding:1.2rem;
     font-weight: bolder;
 }
 nav .nav-menu ul{
@@ -37,10 +39,11 @@ nav .nav-menu ul{
 nav .nav-menu ul li{
     display: inline-block;
     color:#fff;
-    padding:20px;  
+    padding:1.2rem;  
 }
 nav .nav-menu ul li:hover{
     background-color:#566573;
+    color:#ff7f50;
     cursor: pointer;
 }
 #landing{
@@ -54,7 +57,7 @@ nav .nav-menu ul li:hover{
     text-align:center;
     padding-top: 30%;
     color:#fff;
-    line-height: 1.6em;
+    line-height: 1.6rem;
 }
 .container{
     max-width: 900px;
@@ -63,22 +66,44 @@ nav .nav-menu ul li:hover{
 .btn{
     display: inline-block;
     background:#008080;
-    border-radius: 10px;
+    border-radius: 0.8rem;
     padding:10px;
     color:#fff;
     text-decoration: none;
-    margin-bottom:20px;
+    margin-bottom:1.2rem;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.btn-transparent{
+    display: inline-block;
+    background:rgba(0,0,0,0);
+    border : solid 1px #fff;
+    border-radius: 0.8rem;
+    padding:10px;
+    color:#fff;
+    text-decoration: none;
+    margin:1.2rem 0;
+    text-align:center;
+}
+.btn-transparent:hover{
+    background:rgba(255,255,255,1);
+    color:#2E4053;
+}
+#history{
+    background-color:#2E4053;
 }
 .btn:hover{
     background:#0000ad;
     cursor: pointer;
 }
 .history-img{
+    left:2rem;
     width: 50%;
     min-height: 50vh;
     float:left;
     background:url('../img/history.jpg');
     background-size:cover;
+    border:0.5rem solid;
 }
 .history-content{
     background-color:#2E4053;
@@ -91,9 +116,13 @@ nav .nav-menu ul li:hover{
     padding-top:18px;
 }
 #features{
-    background-color:#83919f;
+    background-color:#2E4053;
     overflow:auto;
     padding:10px;
+}
+#features h2{
+    text-align:center;
+    color:#ECF0F1;
 }
 .features-item{
     height:30vh;
@@ -118,21 +147,51 @@ nav .nav-menu ul li:hover{
 }
 #About{
     background-color:#2E4053;
-    height:90vh;
+    height:100vh;
+    padding:4rem;
 }
 #About h1{
     color:#ECF0F1;
     font-size:25px;
     text-align:center;
 }
-#About i{
+#About i[class="fa fa-user-circle fa-5x"]{
     color:#fff;
+    margin:10vh 30vw;
 }
 .About-content{
     color:#fff;
     line-height:1.6em;
     text-align:justify;
     padding: 0 2%;
+}
+#About a{
+    margin: 2vh 30vw;
+}
+#Testimonials{
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url('../img/testimonials.jpg');
+    background-size:cover;
+    margin:0;
+    padding:4rem;
+    position:relative;
+}
+#Testimonials .testimonials-list{
+    height:90vh;
+    width:75vh;
+}
+#Testimonials  .testimonials-list  .testimonials-item{
+    z-index:2;
+    color:#fff;
+}
+#Testimonials h2{
+    text-align: center;
+    color:#fff;
+}
+#Testimonials a{
+    margin:0 30vw;
 }
 #contact .container{
     text-align:center;
